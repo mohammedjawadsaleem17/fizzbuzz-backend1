@@ -11,6 +11,10 @@ app.get("/test",(req,res)=>{
   res.send("Hey I am Working !!")
 })
 
+app.use("/",(req,res)=>{
+  res.json({message:"Hello"})
+})
+
 
 app.post('/fizzbuzz', (req, res) => {
   const { values } = req.body;
