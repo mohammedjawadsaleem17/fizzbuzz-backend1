@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
  
 
-app.get("/test",(req,res)=>{
+app.use("/test",(req,res)=>{
   res.send("Hey I am Working !!")
 })
 
